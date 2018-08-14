@@ -1,0 +1,793 @@
+
+
+    <!-- 登录框 -->
+    <div class="weizi">
+        <!-- 遮罩 -->
+        <div class="ui-mask" id="mask"></div>
+        <div class="ui-dialog" id="dialogMove">
+            <!-- 登录框名字 -->
+            <div class="ui-dialog-title" id="dialogDrag">登录通行证</div>
+            <a class="ui-dialog-closebutton" href="javascript:hideDialog();"></a>
+            <!-- 登录 -->
+            <div class="ui-dialog-content">
+                <!-- 登录框输入框 -->
+                <div class="ui-dialog-l40 ui-dialog-pt15">
+                    <input class="ui-dialog-input ui-dialog-input-username" type="text" placeholder="手机/邮箱/用户名" value="" />
+                </div>
+                <div class="ui-dialog-l40 ui-dialog-pt15">
+                    <input class="ui-dialog-input ui-dialog-input-password" type="password" placeholder="密码" value="" />
+                </div>
+                <!-- 输入框结束 -->
+                <div class="ui-dialog-l40">
+                    <a href="#">忘记密码</a>
+                </div>
+                <!-- 登录按钮 -->
+                <div>
+                    <a class="ui-dialog-submit" href="javascript:Login();">登录</a>
+                    <input type="checkbox" name=""  value="" checked="checked" />保存登录信息
+                </div>
+                <div class="ui-dialog-l40">
+                    <a href="javascript:zhuceInterface();">立即注册</a>
+                </div>
+            </div>
+
+            <!-- //注册 -->
+            <div class="zhuce">
+                 <div class="ui-dialog-l40 ui-dialog-pt15">
+                    <input class="ui-dialog-input ui-dialog-input-username zhuce-name" type="text" placeholder="手机/邮箱/用户名 注册" value="" />
+                </div>
+                <div class="ui-dialog-l40 ui-dialog-pt15">
+                    <input class="ui-dialog-input ui-dialog-input-password zhuce-password" type="password" placeholder="密码" value="" />
+                </div>
+                <div class="ui-dialog-l40 ui-dialog-pt15">
+                    <input class="ui-dialog-input ui-dialog-input-password zhuce-password2" type="password" placeholder="再次输入密码" value="" />
+                </div>
+                <span id="zhuce-name"></span><br>
+                <span id="zhuce-password"></span><br>
+                <!-- 注册按钮 -->
+                
+                <div>
+                    <a class="ui-dialog-submit2" href="javascript:zhuce();">注册</a>
+                    <a class="ui-dialog-submit2" href="javascript:LoginInterface();">返回登录</a>
+                </div>            
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- 登录框 -->
+
+<div class="top">
+    <div class="mylayout d-flex justify-content-between" id="top">
+        <ul class="top_left">
+            <li>
+                <span class="my-size iconfont">&#xe6b1;</span>
+                <a href="#">手机版</a>
+            </li>
+            <li>
+                <a href="#">游戏币交易</a>
+            </li>
+            <li>
+                <a href="#">Q币充值</a>
+            </li>
+            <li>
+                <a href="#">心悦游戏家</a>
+            </li>
+        </ul>
+        <ul class="top_right iconfont ">
+            <li>
+                <!-- 登录调用 -->
+                <span>您还未登录,请</span>
+                <a href="javascript:showDialog();">登录</a>
+
+            </li>
+            <li>
+                <a href="#">我的订单</a>
+            </li>
+            <li>
+                <a href="#">个人中心</a>
+            </li>
+            <li class="myposition">
+                <a href="#">官方论坛
+                    <span class="weibo">&#xe65f;</span>
+                </a>
+                <div>
+                    <p>
+                        <a href="" class="font-weight-bold">官方论坛
+                            <span class="weibo font-weight-normal">&#xe669;</span>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="">官方微博</a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a href="#">帮助中心</a>
+            </li>
+            <li class="Navigation">
+                <a href="#">游戏导航</a>
+                <div class="box" style="width:828px">
+                    <div class="boxtop spr">
+                        <span class="spr" style="width:820px"></span>
+                    </div>
+                    <div class="boxmain spr">
+                        <div class="inner spr">
+                            <div class="lst mmo">
+                                <h2 class="name spr">
+                                    角色扮演
+                                    <span class="amount">(21)</span>
+                                </h2>
+                                <div class="lst">
+                                    <a class="lnk spr" href="">
+                                        冒险岛2</a>
+                                    <a class="lnk spr" href="">
+                                        御龙在天经典版</a>
+                                    <a class="lnk spr" href="">
+                                        怪物猎人OL</a>
+                                    <a class="lnk spr" href="">
+                                        <span class="ico new spr">new</span>
+                                        天涯明月刀</a>
+                                    <a class="lnk spr" href="">
+                                        <span class="ico new spr">new</span>
+                                        上古世纪</a>
+                                    <a class="lnk spr" href="">
+                                        <span class="ico new spr">new</span>
+                                        QQ仙灵</a>
+                                    <a class="lnk spr" href="">
+                                        疾风之刃</a>
+                                </div>
+                                <div class="lst">
+                                    <a class="lnk spr" href="">
+                                        QQ幻想</a>
+                                    <a class="lnk spr" href="">
+                                        刀剑2</a>
+                                    <a class="lnk spr" href="">
+                                        寻仙</a>
+                                    <a class="lnk spr" href="">
+                                        斗战神</a>
+                                    <a class="lnk spr" href="">
+                                        轩辕传奇</a>
+                                    <a class="lnk spr" href="">
+                                        剑灵</a>
+                                    <a class="lnk spr" href="">
+                                        天堂2</a>
+                                </div>
+                                <div class="lst">
+                                    <a class="lnk spr" href="">
+                                        天堂</a>
+                                    <a class="lnk spr" href="">
+                                        幻想世界</a>
+                                    <a class="lnk spr" href="">
+                                        QQ仙侠传</a>
+                                    <a class="lnk spr" href="">
+                                        <span class="ico hot spr">hot</span>
+                                        地下城与勇士</a>
+                                    <a class="lnk spr" href="">
+                                        QQ三国</a>
+                                    <a class="lnk spr" href="">
+                                        <span class="ico hot spr">hot</span>
+                                        御龙在天</a>
+                                    <a class="lnk spr" href="">
+                                        自由幻想</a>
+                                </div>
+                            </div>
+                            <div class="lst ath">
+                                <h2 class="name spr">
+                                    竞技游戏
+                                    <span class="amount">(10)</span>
+                                </h2>
+                                <div class="lst">
+                                    <a class="lnk spr" href="">
+                                        使命召唤</a>
+                                    <a class="lnk spr" href="">
+                                        <span class="ico hot spr">hot</span>
+                                        英雄联盟</a>
+                                    <a class="lnk spr" href="">
+                                        <span class="ico hot spr">hot</span>
+                                        穿越火线</a>
+                                    <a class="lnk spr" href="">
+                                        <span class="ico hot spr">hot</span>
+                                        逆战</a>
+                                    <a class="lnk spr" href="">
+                                        NBA2KOL</a>
+                                    <a class="lnk spr" href="">
+                                        <span class="ico new spr">new</span>
+                                        枪神纪</a>
+                                    <a class="lnk spr" href="">
+                                        战地之王</a>
+                                </div>
+                                <div class="lst">
+                                    <a class="lnk spr" href="">
+                                        FIFA&nbsp;Online</a>
+                                    <a class="lnk spr" href="">
+                                        战争雷霆</a>
+                                    <a class="lnk spr" href="">
+                                        极品飞车OL</a>
+                                </div>
+                            </div>
+                            <div class="lst">
+                                <h2 class="name spr">
+                                    休闲游戏
+                                    <span class="amount">(4)</span>
+                                </h2>
+                                <div class="lst">
+                                    <a class="lnk spr" href="">
+                                        炫舞时代</a>
+                                    <a class="lnk spr" href="">
+                                        <span class="ico hot spr">hot</span>
+                                        QQ炫舞</a>
+                                    <a class="lnk spr" href="">
+                                        QQ音速</a>
+                                    <a class="lnk spr" href="">
+                                        <span class="ico hot spr">hot</span>
+                                        QQ飞车</a>
+                                </div>
+                            </div>
+                            <div class="lst ath">
+                                <h2 class="name spr">
+                                    网页游戏
+                                    <span class="amount">(8)</span>
+                                </h2>
+                                <div class="lst">
+                                    <a class="lnk spr" href="">
+                                        <span class="ico new spr">new</span>
+                                        英魂之刃</a>
+                                    <a class="lnk spr" href="">
+                                        火影忍者OL</a>
+                                    <a class="lnk spr" href="">
+                                        <span class="ico hot spr">hot</span>
+                                        夜店之王</a>
+                                    <a class="lnk spr" href="">
+                                        <span class="ico new spr">new</span>
+                                        部落守卫战</a>
+                                    <a class="lnk spr" href="">
+                                        Q宠大乐斗</a>
+                                    <a class="lnk spr" href="">
+                                        烽火战国</a>
+                                    <a class="lnk spr" href="">
+                                        七雄争霸</a>
+                                </div>
+                                <div class="lst">
+                                    <a class="lnk spr" href="">
+                                        猎鱼达人3D</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="logo">
+    <div class="mylayout  d-flex  justify-content-between">
+        <div class="logo_left"></div>
+        <div class="search align-self-center">
+            <div class="d-flex">
+                <div class="search_list">
+                    <div class="choose">选择游戏
+                        <span></span>
+                    </div>
+                    <div class="search_bottom">
+                        <dl>
+                            <dt>角色扮演：</dt>
+                            <dd class="">
+                                <a biz="mho" href="#">怪物猎人OL</a>
+                                <i>|</i>
+                                <a biz="h2" href="#">QQ仙灵</a>
+                                <i>|</i>
+                                <a biz="wuxia" href="#">天涯明月刀</a>
+                                <i>|</i>
+                                <a biz="age" href="#">上古世纪</a>
+                                <i>|</i>
+                                <a biz="dzs" href="#">斗战神</a>
+                                <i>|</i>
+                                <a biz="xy" href="#">轩辕传奇</a>
+                                <i>|</i>
+                                <a biz="xx" href="#">寻仙</a>
+                                <i>|</i>
+                                <a biz="bns" href="#">剑灵</a>
+                                <i>|</i>
+                                <a biz="tiantang2" href="#">天堂2</a>
+                                <i>|</i>
+                                <a biz="tiantang" href="#">天堂</a>
+                                <i>|</i>
+                                <a biz="hxsj" href="#">幻想世界</a>
+                                <i>|</i>
+                                <a biz="xxz" href="#">QQ仙侠传</a>
+                                <i>|</i>
+                                <a biz="c9" href="#">第九大陆</a>
+                                <i>|</i>
+                                <a biz="dnf" href="#">地下城和勇士</a>
+                                <i>|</i>
+                                <a biz="sg" href="#">QQ三国</a>
+                                <i>|</i>
+                                <a biz="yl" href="#">御龙在天</a>
+                                <i>|</i>
+                                <a biz="yljd" href="#">御龙在天经典版</a>
+                                <i>|</i>
+                                <a biz="ffo" href="#">自由幻想</a>
+                                <i>|</i>
+                                <a biz="fo" href="#">QQ幻想</a>
+                                <i>|</i>
+                                <a biz="dj2" href="#">刀剑2</a>
+                                <i>|</i>
+                                <a biz="jf" href="#">疾风之刃</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>竞技游戏：</dt>
+                            <dd class="">
+                                <a biz="nfsol" href="#">极品飞车OL</a>
+                                <i>|</i>
+                                <a biz="zzlt" href="#">战争雷霆</a>
+                                <i>|</i>
+                                <a biz="smite" href="#">神之浩劫</a>
+                                <i>|</i>
+                                <a biz="codol" href="#">使命召唤codol</a>
+                                <i>|</i>
+                                <a biz="lol" href="#">英雄联盟</a>
+                                <i>|</i>
+                                <a biz="nz" href="#">逆战</a>
+                                <i>|</i>
+                                <a biz="cf" href="#">穿越火线</a>
+                                <i>|</i>
+                                <a biz="nba2k" href="#">NBA2KOL</a>
+                                <i>|</i>
+                                <a biz="ava" href="#">战地之王</a>
+                                <i>|</i>
+                                <a biz="tps" href="#">枪神纪</a>
+                                <i>|</i>
+                                <a biz="fifa" href="#">FIFA&nbsp;Online3</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>休闲游戏：</dt>
+                            <dd class="">
+                                <a biz="k" href="#">王牌对决</a>
+                                <i>|</i>
+                                <a biz="x5" href="#">QQ炫舞</a>
+                                <i>|</i>
+                                <a biz="x52" href="#">炫舞时代</a>
+                                <i>|</i>
+                                <a biz="speed" href="#">QQ飞车</a>
+                                <i>|</i>
+                                <a biz="r2" href="#">QQ音速</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>网页游戏：</dt>
+                            <dd class="">
+                                <a biz="bydr" href="#">猎鱼达人3D</a>
+                                <i>|</i>
+                                <a biz="ye" href="#">夜店之王</a>
+                                <i>|</i>
+                                <a biz="bl" href="#">部落守卫战</a>
+                                <i>|</i>
+                                <a biz="fight" href="#">Q宠大乐斗</a>
+                                <i>|</i>
+                                <a biz="zg" href="#">烽火战国</a>
+                                <i>|</i>
+                                <a biz="7" href="#">七雄争霸</a>
+                                <i>|</i>
+                                <a biz="hyol" href="#">火影忍者OL</a>
+                                <i>|</i>
+                                <a biz="cos" href="#">英魂之刃</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <input type="text" placeholder="请选择游戏搜索道具" style="flex:1;height: 32px;padding: 0 5px; font-size: 12px;" />
+                <input type="button" class="btn-bg" />
+            </div>
+        </div>
+        <div class="logo_right"></div>
+
+    </div>
+</div>
+<div class="nav1">
+    <div id="nav" class="mylayout myrow iconfont">
+        <div class="nav_left">
+            <a href="#"><span>&#xe667;</span>所有游戏分类</a>
+            <div class="nav_init">
+                <div class="d-flex dl">
+                    <div class="first">
+                        <span>&#xe60a;</span>热门游戏
+                    </div>
+                    <div class="second">
+                        <div>
+                            <a href="">英魂之刃</a>
+                            <a href="">战争雷霆</a>
+                            <a href="">英雄联盟</a>
+                            <a href="">穿越火线</a>
+                            <a style="width:110px" href="">怪物猎人OL</a>
+                            <a href="">使命召唤</a>
+                            <a href="">上古世纪</a>
+                            <a href="">天涯明月刀</a>
+                            <a href="">FIFA&nbsp;Online3</a>
+                        </div>
+                    </div>
+                    <div class="three">
+                        <div>
+                            <a href="">剑灵</a>
+                            <a href="">逆战</a>
+                            <a href="">QQ飞车</a>
+                            <a href="">御龙在天</a>
+                            <a href="" style="width:100px;">御龙在天经典版</a>
+                            <a href="">猎鱼达人3D</a>
+                            <a href="">极品飞车OL</a>
+                        </div>
+                    </div>
+                    <!-- end用于nextuntil选择 2 3 div -->
+                    <div class="end"></div>
+                </div>
+                <div class="d-flex dl">
+                    <div class="first">
+                        <span>&#xe64d;</span>角色扮演
+                    </div>
+                    <div class="second">
+                        <div>
+                            <a href="">英魂之刃</a>
+                            <a href="">战争雷霆</a>
+                            <a href="">英雄联盟</a>
+                            <a href="">穿越火线</a>
+                            <a style="width:110px" href="">怪物猎人OL</a>
+                            <a href="">使命召唤</a>
+                            <a href="">上古世纪</a>
+                            <a href="">天涯明月刀</a>
+                            <a href="">FIFA&nbsp;Online3</a>
+                        </div>
+                    </div>
+                    <div class="three">
+                        <div>
+                            <a href="">剑灵</a>
+                            <a href="">逆战</a>
+                            <a href="">QQ飞车</a>
+                            <a href="">御龙在天</a>
+                            <a href="" style="width:100px;">御龙在天经典版</a>
+                            <a href="">猎鱼达人3D</a>
+                            <a href="">极品飞车OL</a>
+                        </div>
+                    </div>
+                    <div class="four">
+                        <div>
+                            <a href="">剑灵</a>
+                            <a href="">逆战</a>
+                            <a href="">QQ飞车</a>
+                            <a href="">御龙在天</a>
+                            <a href="" style="width:100px;">御龙在天经典版</a>
+                            <a href="">猎鱼达人3D</a>
+                            <a href="">极品飞车OL</a>
+                        </div>
+                    </div>
+                    <div class="end"></div>
+                </div>
+                <div class="d-flex dl">
+                    <div class="first">
+                        <span>&#xe61a;</span>竞技游戏
+                    </div>
+                    <div class="second">
+                        <div>
+                            <a href="">英魂之刃</a>
+                            <a href="">战争雷霆</a>
+                            <a href="">英雄联盟</a>
+                            <a href="">穿越火线</a>
+                            <a style="width:110px" href="">怪物猎人OL</a>
+                            <a href="">使命召唤</a>
+                            <a href="">上古世纪</a>
+                            <a href="">天涯明月刀</a>
+                            <a href="">FIFA&nbsp;Online3</a>
+                        </div>
+                    </div>
+                    <div class="three">
+                        <div>
+                            <a href="">剑灵</a>
+                            <a href="">逆战</a>
+                            <a href="">QQ飞车</a>
+                            <a href="">御龙在天</a>
+                            <a href="" style="width:100px;">御龙在天经典版</a>
+                            <a href="">猎鱼达人3D</a>
+                            <a href="">极品飞车OL</a>
+                        </div>
+                    </div>
+                    <div class="end"></div>
+                </div>
+                <div class="d-flex dl">
+                    <div class="first">
+                        <span>&#xe6b0;</span>休闲游戏
+                    </div>
+                    <div class="second">
+                        <div>
+                            <a href="">英魂之刃</a>
+                            <a href="">战争雷霆</a>
+                            <a href="">英雄联盟</a>
+                            <a href="">穿越火线</a>
+                            <a style="width:110px" href="">怪物猎人OL</a>
+                            <a href="">使命召唤</a>
+                            <a href="">上古世纪</a>
+                            <a href="">天涯明月刀</a>
+                            <a href="">FIFA&nbsp;Online3</a>
+                        </div>
+                    </div>
+                    <div class="end"></div>
+                </div>
+                <div class="d-flex dl">
+                    <div class="dt-last first">
+                        <span>&#xf0070;</span>网页游戏
+                    </div>
+                    <div class="second">
+                        <div>
+                            <a href="">英魂之刃</a>
+                            <a href="">战争雷霆</a>
+                            <a href="">英雄联盟</a>
+                            <a href="">穿越火线</a>
+                            <a style="width:110px" href="">怪物猎人OL</a>
+                            <a href="">使命召唤</a>
+                            <a href="">上古世纪</a>
+                            <a href="">天涯明月刀</a>
+                            <a href="">FIFA&nbsp;Online3</a>
+                        </div>
+                    </div>
+                    <div class="end"></div>
+                </div>
+            </div>
+         </div> 
+        <div class="row h-100 col-8 nav_md ">
+            <div class="col-2">
+                <a href="index.html">首页</a>
+                <ul>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-2">
+                <a href="#">活动中心</a>
+                <ul>
+                    <li>
+                        <a href="">闪购专区</a>
+                    </li>
+                    <li>
+                        <a href="">淘宝贝</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-2">
+                <a href="introduce.html">商品详情</a>
+                <ul>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <a href="#">手游中心</a>
+                <ul>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-2">
+                <a href="goods.html">聚豆商城列表</a>
+                <ul>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <a href="#">个人中心</a>
+                <ul>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                    <li>
+                        <a href="">二级菜单</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="nav_right">
+            <a class="nav_right1" href="car.html">
+                <span class="carbg"></span>
+                <b>购物车</b>
+            </a>
+            <span class="nav_right2">0</span>
+            <!--<div id="car" style="display: none;"></div>-->
+        </div>
+    </div>
+</div>
+
+
+
+<div class="mylayout d-flex justify-content-between" id="imgs">
+    <a href="">
+        <img src="images/20170728172416_963637.jpg" alt="">
+    </a>
+    <a href="">
+        <img src="images/20180525152832_523625.jpg" alt="">
+    </a>
+    <a href="">
+        <img src="images/20160226162551_787265.jpg" alt="">
+    </a>
+</div>
+
+
+<div class="footer">
+<div class="mylayout" style="width: 1280px;">
+    <div class="footer_top d-flex">
+        <div class="title">
+            <h4>
+                <em style="background-position:0 -136px;"></em>我是新手
+            </h4>
+            <ul>
+                <li>
+                    <a  href="">什么是道聚城</a>
+                </li>
+                <li>
+                    <a  href="">如何购买</a>
+                </li>
+                <li>
+                    <a  href="">如何赠送</a>
+                </li>
+                <li>
+                    <a  href="">如何获取聚豆</a>
+                </li>
+            </ul>
+        </div>
+        <div class="title">
+            <h4>
+                <em style="background-position: -32px -136px;"></em>个人中心
+            </h4>
+            <ul>
+                <li>
+                    <a  href="">发货时间</a>
+                </li>
+                <li>
+                    <a  href="">如何领取</a>
+                </li>
+                <li>
+                    <a  href="">补发规则</a>
+                </li>
+                <li>
+                    <a  href="">Vip价定义</a>
+                </li>
+                <li>
+                    <a  href="">道具状态定义</a>
+                </li>
+            </ul>
+        </div>
+        <div class="title">
+            <h4>
+                <em style="background-position: -63px -136px;"></em>支付方式
+            </h4>
+            <ul>
+                <li>
+                    <a  href="">支付方式</a>
+                </li>
+                <li>
+                    <a  href="">购物点支付</a>
+                </li>
+                <li>
+                    <a  href="">如何充值</a>
+                </li>
+            </ul>
+        </div>
+        <div class="title">
+            <h4>
+                <em style="background-position: -95px -136px;"></em>腾讯在线服务
+            </h4>
+            <ul>
+                <li>
+                    <a  href="">腾讯官方在线客服</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="footer_code d-flex">
+            <li>
+                <div>
+                    <img src="images/zsdjc.png" width="100" height="100" alt="掌上道聚城二维码">
+                </div>
+                <p>掌上道聚城</p>
+            </li>
+            <li>
+                <div>
+                    <img src="images/wechatdjc.png" width="100" height="100" alt="道聚城公众号">
+                </div>
+                <p>道聚城公众号</p>
+            </li>
+        </ul>
+    </div>
+    <div class="footer_wrap">
+        <p class="like_a">
+            <a href="">腾讯互动娱乐</a> |
+            <a href="">服务条款</a> |
+            <a href="">广告服务</a> |
+            <a href="">腾讯游戏招聘</a> |
+            <a href="">腾讯游戏客服</a> |
+            <a href="">游戏地图</a> |
+            <a href="">成长守护平台</a> |
+            <a href="">商务合作</a> |
+            <a href="">网站导航</a>
+        </p>
+        <p class="like_a">COPYRIGHT © 1998 – 2018 TENCENT. ALL RIGHTS RESERVED.</p>
+        <p>
+            <a href="">腾讯公司 版权所有</a>
+        </p>               
+    </div>
+</div> 
+<div class="fixednav">
+    <a href="#">返回顶部</a>
+</div>
+
+</div>
+
+
+

@@ -1,0 +1,328 @@
+@import "style.css";
+//nav
+.nav1 {
+    .myrow {
+        .nav_left {
+            background: #3a3f4a;
+            a {
+                color: #acb1bb;
+            }
+            .nav_init {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+.container-fluid{
+    width: 1190px;
+}
+
+
+.local_name {
+    padding:24px 0 10px 0;
+    color: #606060;
+    font-size: 12px;
+    cursor: pointer;
+    
+    div{
+        a{
+            font-size: 12px;
+            color: #3a3f4a;
+            text-decoration: none;
+            outline: none;
+        }
+    }
+}
+@mixin green-line() {
+    position: absolute;
+    top: 47px;
+    left: 0;
+    z-index: 1;
+    width: 80px;
+    height: 2px;
+    background: #36ab87;
+    display: block;
+    
+}
+
+.islike{
+    width: 228px;;
+    padding: 0 13px 0 0;
+    background: #fafbfc;
+    height: auto;
+    margin-top: 10px;
+    h3{
+        margin-left: 18px;
+        font-size: 16px;
+        color: #555;
+        font-weight: bold;
+        height: 47px;
+        border-bottom: 2px solid #f3f4f6;
+        line-height: 54px;
+        text-indent: 6px;
+        position: relative;
+        .green-line{
+            @include green-line()
+        }
+
+    }
+    .like-list{
+        margin-left: 18px !important;
+        li{
+            overflow: hidden;
+            border-bottom: 1px dashed #e7e7e7;
+            a{
+                div{
+                    float: left;
+                    height: 88px;
+                    padding-top: 18px;
+                    &:last-child{
+                        width: 108px;
+                        overflow: hidden;
+                        color: #222;
+                        float: right;  
+                       
+                        &:hover{
+                            p{
+                                &:first-child {
+                                        color: #36ab87;
+                                        text-decoration: underline;
+                                    }
+                                    &:last-child{
+                                        color:red;
+                                    }
+                            }
+                        }
+                    }
+                    p{
+                        width: 108px;
+                        height: 14px;
+                        line-height: 12px;
+                        margin-bottom: 5px;
+                        font-size: 12px;
+                        &:first-child{
+                            font-weight: bold;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .myclear{
+        text-align: center;
+        display: inline-block;
+        margin: 0 auto;
+        font-size: 12px;
+        height: 40px;
+        width: 100%;
+        line-height: 40px;
+        span:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.goods-news{
+    float: left;
+    background: #fafbfc;
+    padding: 30px 0 14px 58px;
+    .goods-img{
+        height: 360px;
+        .myimg{
+            float: left;
+            img{
+                margin-top: 35px;
+                width: 260px;
+                height: 154px;
+            }
+            ul {
+                margin-top: 15px !important;
+                text-align: center;
+                li{
+                    a{
+                        font-size: 12px;
+                        color: #acb1bb;
+                    }
+
+                }
+            }
+        }
+        .goods-text{
+            float: left;
+            width: auto;
+            margin-left: 40px;
+            overflow: hidden;
+            font-size: 14px;
+            color: #606060;
+            dt{
+                font-weight: normal;
+            }
+            .weixin-red{
+                color: #f25806;
+                font-size: 25px;
+                font-weight: bolder;
+            }
+            h2{
+                font-size: 18px;
+                font-weight: 800;
+                color: #2e2e2e;
+                width: 450px;
+                text-align: left;
+                margin-bottom: 30px;
+                span{
+                    display: block;
+                    line-height: 30px;
+                }
+            }
+            .bottom-dl{
+                margin-top: 30px !important;
+            }
+            .mybtn{
+                a{  
+                    margin: 10px 9px 0 15px;
+                    display: block;
+                    float: left;
+                    width: 142px;
+                    height: 42px;
+                    line-height: 42px;
+                    text-align: center;
+                    font-size: 18px;
+                    color: #fff;
+                    background: #259afe;
+                    &:first-child{
+                        background: #f25806;
+                        margin: 10px 9px 0 0;
+
+                    }
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+
+    }
+}
+.goods-info-box{
+    float: left;
+    border: 1px #acb1bb solid;
+    margin: 36px 20px 0 -35px;
+    padding:10px 55px 10px 8px;
+    overflow: hidden;
+    div{
+        a{  
+            font-size: 14px;
+            color: #9f9f9f;
+            &:first-child{
+                font-weight: bold;
+                color: #222;
+            }
+        }
+        &:last-child{
+            margin: 30px 25px 0 60px;
+            p{
+                font-size: 14px;
+                color: #2e2e2e;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+
+}
+
+.shopping-box{
+    margin: 20px 0 40px 0;
+    width:950px;
+    background:#fff;
+    padding: 16px 10px 0;
+   
+    .shopping-name{
+        h3{
+            color: #222;
+            font-weight: bold;
+            border-bottom: 2px solid #36ab87;
+            font-size: 18px;
+            height: 26px;
+            width: 85px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        div{
+            margin-right: 30px;
+            a{
+                color: #1994eb;
+                cursor: pointer;
+                font-size: 14px;
+            }
+        }
+        
+    }
+    
+    .shopping{
+    
+        ul{
+            li{
+                margin-right: 18px;
+                float: left;
+                display: inline;
+                padding: 25px 6px;
+                text-align: center;
+                width: 279px;
+                -webkit-transition: all .2s linear;
+                transition: all .2s linear;
+                a{
+                    display: block;
+                    float: left;
+                    img{
+                        width: 120px;
+                        height: 114px;
+                    }
+
+                }
+                .shop-text{
+                    width: 120px;
+                    float: left;
+                    text-align: left;
+                    p {
+                        font-size: 12px;
+                        margin-bottom: 0;
+                        a{
+                            font-size: 12px;
+                            em{
+                                margin-top: 5px;
+                                font-size: 14px;
+                                font-weight: bold;
+                                width: 170px;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                height: 22px;
+                                color: #2e2e2e;
+                                display: block;
+                            }
+
+                        }
+                        .orange{
+                            
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: #ff5900;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
